@@ -24,7 +24,7 @@ function onClick() {
 
       <v-main>
         <v-container>
-          <h1>Main Content</h1>
+          <h1>amasja</h1>
         </v-container>
       </v-main>
     </v-app>
