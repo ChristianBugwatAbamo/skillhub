@@ -28,13 +28,7 @@ function onClick() {
         </v-container>
       </v-main>
 
-      <v-footer
-        class="font-weight-bold"
-        color="blue-darken-4"
-        elevation="24"
-        border
-        app
-        class="text-center"
+      <v-footer class="font-weight-bold" color="blue-darken-4" elevation="24" border app
         >2024 - Skill Hub</v-footer
       >
     </v-app>
