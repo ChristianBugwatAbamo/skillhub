@@ -11,7 +11,7 @@ function onClick() {
 <template>
   <v-responsive class="border rounded">
     <v-app :theme="theme">
-      <v-app-bar class="px-3">
+      <v-app-bar class="px-3" color="blue-darken-4">
         <v-spacer></v-spacer>
 
         <v-btn
@@ -24,9 +24,35 @@ function onClick() {
 
       <v-main>
         <v-container>
-          <h1>amasja</h1>
+          <v-row class="d-flex justify-center">
+            <v-col cols="12" md="6">
+              <v-card class="mx-auto" prepend-icon="mdi-account" subtitle="Login Form">
+                <template v-slot:title>
+                  <span class="font-weight-black">Skill Hub </span>
+                </template>
+
+                <v-card-text class="bg-surface-light pt-4">
+                  <v-sheet class="mx-auto" width="300">
+                    <v-form fast-fail @submit.prevent>
+                      <v-text-field label="Email" variant="outlined"></v-text-field>
+
+                      <v-text-field
+                        label="Password"
+                        type="password"
+                        variant="outlined"
+                      ></v-text-field>
+
+                      <v-btn class="mt-2" type="submit" block>Submit</v-btn>
+                    </v-form>
+                  </v-sheet>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
         </v-container>
       </v-main>
+
+      <v-footer color="blue-darken-4" border app>2024 - Skill Hub</v-footer>
     </v-app>
   </v-responsive>
 </template>
